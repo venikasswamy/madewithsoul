@@ -936,3 +936,55 @@ footer {
     text-align: center;
   }
 }
+/* ===== MOBILE HEADER FIX ===== */
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+  }
+
+  .nav-left {
+    flex: 1;
+    gap: 6px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .nav-actions {
+    gap: 6px;
+  }
+
+  .search-bar {
+    width: 140px;
+    font-size: 13px;
+  }
+
+  .login-btn {
+    padding: 5px 12px;
+    font-size: 13px;
+  }
+
+  .nav-logo {
+    height: 45px;
+  }
+
+  /* HERO FIX */
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
