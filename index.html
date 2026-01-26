@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Madewithsoul | Handmade Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header class="main-header">
+  <div class="header-inner">
+
+    <!-- LEFT SIDE -->
+    <div class="left-box">
+      <nav class="top-nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#cart">Cart 🛒</a>
+        
+      </nav>
+
+      <div class="bottom-bar">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search handmade products..." 
+          onkeyup="searchProducts()" 
+          class="search-bar"
+        />
+        <button id="loginBtn" class="login-btn">Login</button>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE (LOGO) -->
+    <div class="logo-box">
+      <img src="logo.png" alt="Madewithsoul Logo">
+    </div>
+
+  </div>
+</header>
+
+
+
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h2>Handmade with Love ❤️</h2>
+    <p>Crafted by hands, cherished by hearts.</p>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+</section>
+<section class="categories">
+  <h2>Shop by Category</h2>
+
+  <div class="category-grid">
+    <div class="category-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.Htb0wufOgHyP_Su9uddZcAHaGm?rs=1&pid=ImgDetMain&o=7&rm=3">
+      <h3>Pottery</h3>
+    </div>
+
+    <div class="category-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.d5KlYb7h0sMUK52JoiSOVAHaH6?rs=1&pid=ImgDetMain&o=7&rm=3">
+      <h3>Candles</h3>
+    </div>
+
+    <div class="category-card">
+      <img src="https://www.nehhdc.com/assets/images/s2.jpg">
+      <h3>Handloom</h3>
+    </div>
+
+    <div class="category-card">
+      <img src="https://adorable-home.com/wp-content/uploads/2016/01/Handmade-Wall-Decor-3.jpg">
+      <h3>Home Decor</h3>
+    </div>
+
+    <div class="category-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.zS4VtbsUwtBdaI_6jGD-_AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+      <h3>Jewelry</h3>
+    </div>
+
+    <div class="category-card">
+      <img src="https://i.pinimg.com/originals/37/a0/d2/37a0d2961d91159ae01752b9feed858c.jpg">
+      <h3>Paintings</h3>
+    </div>
+  </div>
+</section>
+<section class="best-sellers">
+  <h2>🔥 Best Sellers</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <span class="badge">🔥 Bestseller</span>
+      <img src="https://img1.etsystatic.com/000/0/5295843/il_fullxfull.252116053.jpg">
+      <h3>Handmade Pottery Vase</h3>
+      <p class="price">₹1,099</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="badge">🔥 Bestseller</span>
+      <img src="https://5.imimg.com/data5/ANDROID/Default/2024/11/467436541/YB/UU/KD/235410470/product-jpeg-500x500.jpg">
+      <h3>Scented Soy Candles</h3>
+      <p class="price">₹699</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="badge">🔥 Bestseller</span>
+      <img src="https://i.etsystatic.com/isa/a4d928/11973542695/isa_760xN.11973542695_ftvp.jpg?version=0">
+      <h3>Handcrafted Jewelry Set</h3>
+      <p class="price">₹1,499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="badge">🔥 Bestseller</span>
+      <img src="https://i.etsystatic.com/22696153/r/il/20dd2f/3020820739/il_794xN.3020820739_qgrq.jpg">
+      <h3>Traditional Wall Painting</h3>
+      <p class="price">₹2,499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="badge">🔥 Bestseller</span>
+      <img src="https://www.kopaipaar.com/wp-content/uploads/2016/09/Scarf-Bengal-Handloom-Cotton-Yellow-stripes.jpg">
+      <h3>Handloom Cotton Scarf</h3>
+      <p class="price">₹899</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="badge">🔥 Bestseller</span>
+      <img src="https://cdn.shopify.com/s/files/1/0941/2500/collections/WoodenHomeDecor-WoodgeekStore_2048x.jpg?v=1563415566">
+      <h3>Wooden Home Decor Set</h3>
+      <p class="price">₹1,599</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+<section class="new-arrivals">
+  <h2>✨ New Arrivals</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <span class="new-badge">New</span>
+      <img src="https://i.etsystatic.com/19213097/r/il/e97880/4305455001/il_340x270.4305455001_8801.jpg">
+      <h3>Handwoven Table Runner</h3>
+      <p class="price">₹799</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="new-badge">New</span>
+      <img src="https://i.etsystatic.com/11971667/r/il/f7c835/3031020410/il_fullxfull.3031020410_2dje.jpg">
+      <h3>Ceramic Tea Set</h3>
+      <p class="price">₹2,199</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="new-badge">New</span>
+      <img src="https://i.etsystatic.com/7208070/r/il/431259/1777715472/il_1080xN.1777715472_cxjm.jpg">
+      <h3>Boho Handmade Necklace</h3>
+      <p class="price">₹1,299</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <span class="new-badge">New</span>
+      <img src="https://img.freepik.com/premium-photo/beautiful-light-lamp-decor-glowing_974629-149311.jpg">
+      <p class="price">₹2,799</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+<section class="offers">
+  <h2>🎉 Offers & Deals</h2>
+
+  <div class="offer-grid">
+    <div class="offer-card">
+      <h3>10% OFF</h3>
+      <p>On your first order</p>
+      <span>Use code: SOUL10</span>
+    </div>
+
+    <div class="offer-card">
+      <h3>Festival Sale</h3>
+      <p>Up to 30% off on selected items</p>
+      <span>Limited time only</span>
+    </div>
+
+    <div class="offer-card">
+      <h3>Free Delivery</h3>
+      <p>Orders above ₹999</p>
+      <span>All over India</span>
+    </div>
+  </div>
+</section>
+
+<section id="shop">
+  <h2 class="title">Our Products</h2>
+  <div class="products" id="products"></div>
+</section>
+
+<section id="cart">
+  <h2 class="title">Your Cart</h2>
+  <div id="cart-items"></div>
+  <h3 id="total"></h3>
+</section>
+<section class="why-choose">
+  <h2>Why Choose Madewithsoul?</h2>
+
+  <div class="features">
+    <div class="feature">
+      <span>👐</span>
+      <h3>Handmade with Love</h3>
+      <p>Each product is carefully crafted by skilled artisans.</p>
+    </div>
+
+    <div class="feature">
+      <span>🌿</span>
+      <h3>Eco Friendly</h3>
+      <p>We use sustainable materials and natural processes.</p>
+    </div>
+
+    <div class="feature">
+      <span>🤝</span>
+      <h3>Support Artisans</h3>
+      <p>Your purchase supports local craft communities.</p>
+    </div>
+    <div class="feature">
+      <span>📦</span>
+      <h3>Safe Packaging & Secure Delivery</h3>
+      <p>Eco-friendly packaging and shipped safely to your doorstep </p>
+    </div>
+    <div class="feature">
+      <span>💝</span>
+      <h3>Made for Gifting & Memories</h3>
+      <p>Our products are perfect for birthdays, weddings, festivals, and special occasions.</p>
+    </div>
+    <div class="feature">
+      <span>⭐</span>
+      <h3>Unique Designs</h3>
+      <p>No two items are the same – every piece is special.</p>
+    </div>
+    <div class="feature">
+      <span>💬</span>
+      <h3>Personal Customer Support</h3>
+      <p>We care about every customer like family.</p>
+    </div>
+    <div class="feature">
+      <span>🔒</span>
+      <h3>Secure Payments</h3>
+      <p>Your payment safety is our priority.</p>
+    </div>
+  </div>
+</section>
+<section class="reviews">
+  <h2>What Our Customers Say ❤️</h2>
+
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>
+        “Absolutely in love with the handmade candle set. 
+        The quality and detailing are amazing. Will definitely order again!”
+      </p>
+      <h4>— Ananya R., Bangalore</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>
+        “The pottery vase looks even better than the pictures. 
+        You can feel the effort and love in every piece.”
+      </p>
+      <h4>— Rohit M., Pune</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>
+        “Perfect place for gifting! Ordered a handmade wall decor 
+        and my friend loved it so much.”
+      </p>
+      <h4>— Sneha K., Chennai</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>
+        “Packaging was eco-friendly and beautiful. 
+        Delivery was fast and smooth. Highly recommend!”
+      </p>
+      <h4>— Arjun S., Hyderabad</h4>
+    </div>
+  </div>
+</section>
+<section class="track-order">
+  <h2>Track Your Order 📦</h2>
+
+  <div class="track-box">
+    <input type="text" id="orderId" placeholder="Enter your Order ID">
+    <button onclick="trackOrder()">Track Order</button>
+
+    <div id="orderResult" class="order-result"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3>Madewithsoul</h3>
+      <p>Every piece carries a story, every purchase supports a dream.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#track">Track Order</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="#">FAQs</a>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <p>Instagram | Facebook | WhatsApp</p>
+    </div>
+  </div>
+
+  <p class="copy">© 2026 Madewithsoul. All rights reserved.</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
