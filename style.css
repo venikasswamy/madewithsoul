@@ -936,55 +936,72 @@ footer {
     text-align: center;
   }
 }
-/* ===== MOBILE HEADER FIX ===== */
+/* ============================
+   FORCE MOBILE LAYOUT FIX
+============================ */
 @media (max-width: 600px) {
 
+  /* NAVBAR */
   .navbar {
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 12px;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 10px 12px !important;
   }
 
   .nav-left {
-    flex: 1;
-    gap: 6px;
+    width: 100%;
   }
 
   .nav-links {
-    gap: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
   }
 
   .nav-actions {
-    gap: 6px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
   }
 
   .search-bar {
-    width: 140px;
+    width: 100% !important;
     font-size: 13px;
   }
 
   .login-btn {
-    padding: 5px 12px;
     font-size: 13px;
+    padding: 5px 12px;
+  }
+
+  .nav-right {
+    width: 100%;
+    text-align: right;
+    margin-top: 5px;
   }
 
   .nav-logo {
-    height: 45px;
+    height: 40px !important;
   }
 
-  /* HERO FIX */
+  /* HERO */
+  .hero {
+    min-height: 70vh;
+    background-position: center;
+  }
+
   .hero h2 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 
   .hero p {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
-  .btn {
+  .hero button {
+    font-size: 14px;
     padding: 8px 20px;
-    font-size: 14px;
   }
-}
 
+}
